@@ -735,6 +735,17 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     padding-bottom: 50px;
 }
 
+.hiring {
+    display: none;
+    z-index:200;
+    position:fixed;
+    top:40%;
+    right:0;
+    width:87px;
+    height:125px;
+    transition: all 0.5s;
+}
+
 /* Divider */
 .divider{
     width:5px;
@@ -816,7 +827,7 @@ label {
     margin: 0 0;
 }
 .services-content, .services-content-right {
-    padding: 0px 20px;
+    padding: 20px 20px;
     text-align: center;
 }
 #team-section .item {

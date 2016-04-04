@@ -186,7 +186,6 @@ header p {
 	font-family: 'Open Sans', sans-serif;
     font-weight: 500;
 	background-color: #f1c40f;
-	border: 0;
 	margin: 0 8px;
 	font-size: 18px;
 	transition: all 0.5s;
@@ -237,11 +236,18 @@ header p {
     text-align: center;
     font-size: 25px;
     line-height: 90px;
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 .services-icon-right {
-    padding-right: 50px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 25px;
+    line-height: 90px;
+    margin-right: 50px;
 }
 
 .services-arrow {
@@ -265,7 +271,6 @@ header p {
     text-align: right;
     padding-left: 100px;
 }
-
 
 /* Gallery Section 
 ==============================*/
@@ -507,17 +512,17 @@ img.img-circle.client-img {
     display: inline-block;
     width: 150px;
     height: 150px;
-    margin-right: 25px;
     vertical-align: top;
     text-align: center;
     font-size: 25px;
     line-height: 90px;
+    margin-bottom: 20px;
 }
 
 .clients-logo-container {
+    display: block;
     margin-top: 100px;
 }
-
 /* Team Section */
 #team-section {
 	padding: 80px 0;
@@ -608,7 +613,7 @@ img.img-circle.team-img {
 
 /* Contact Section */
 #contact-section {
-	padding: 80px 0 20px 0;
+	padding: 0px 0 100px 0;
 }
 #contact-section hr {
 	background: #1cb2df;
@@ -737,6 +742,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     display:inline-block;
 }
 
+/* Divider */
+.modal-footer {
+    border: none;
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
@@ -803,6 +813,7 @@ label {
 }
 .services-icon, .services-icon-right {
     padding: 0px 0px;
+    margin: 0 0;
 }
 .services-content, .services-content-right {
     padding: 0px 20px;

@@ -156,6 +156,7 @@ hr {
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #c00069;
+    border: none;
 }
 /* Home Style */
 header {

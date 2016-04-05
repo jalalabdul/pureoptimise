@@ -771,7 +771,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     color: #c00069;
 }
 .hiring {
-    display: none;
+    opacity: 0;
     z-index:200;
     position:fixed;
     top:40%;

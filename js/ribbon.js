@@ -4,10 +4,10 @@ window.onscroll = function (e) {
     var diff=Dposition-Wposition;
     if(diff<=45)
     {
-    document.getElementById('hiring').style.display="inline-block";
+    document.getElementById('hiring').style.opacity="1";
     }
     if(diff>45)
     {
-    document.getElementById('hiring').style.display="none";
+    document.getElementById('hiring').style.opacity="0";
     }    
 }

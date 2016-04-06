@@ -937,6 +937,10 @@ text-align: center;
 header p {
     font-size: 16px;
 }
+.intro-text p {
+    font-size: 18px;
+    line-height: inherit;
+}
 }
 
 .slick-prev:before, .slick-next:before { font-family: FontAwesome; font-size: 20px; line-height: 1; color: #b8b8b8; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }   

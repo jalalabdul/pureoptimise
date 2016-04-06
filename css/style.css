@@ -941,7 +941,7 @@ text-align: center;
 }
 @media (max-width: 320px) {
 .intro-text p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: inherit;
 }
 }

@@ -54,12 +54,12 @@
 </div>
 <!-- Navigation
     ==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+<span itemscope itemtype="http://schema.org/LocalBusiness"><nav id="menu" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="..."></a> </div>
+      <a class="navbar-brand" href="index.html"><img itemprop="image" src="img/logo.png" alt="Pure Optimisation Ltd"></a> </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -281,10 +281,10 @@
             <p>Founder and CEO</p>
               </div>
             <ul class="list-inline">
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://uk.linkedin.com/in/antrobbo" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://twitter.com/antrobbo" target="_blank"><i class="fa fa-twitter"></i></a></li>
             </ul>
-            <p>A multi award winning, international digital marketing strategist and conference speaker, Antony has extensive technical and hands on expertise across multiple digital marketing disciplines including Search Engine Optimisation (SEO), Social Media, Pay Per Click (PPC) & Conversion Rate Optimisation (CRO). Antony has more than 15 years agency and client side experience delivering digital marketing strategy within various verticals including consumer e-commerce.</p>
+            <p>Antony has more than 15 years agency and client side experience delivering digital marketing strategy. A multi award winning, international digital marketing strategist and conference speaker, Antony has extensive technical and hands on expertise across multiple digital marketing disciplines including SEO, PPC, Social Media &amp; CRO.</p>
       </div>
   </div>
          <div class="col-md-6 wow fadeInUp" data-wow-delay="200ms">
@@ -295,10 +295,10 @@
             <p>Founder and CEO</p>
               </div>
             <ul class="list-inline">
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://uk.linkedin.com/in/berian" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://twitter.com/berianreed" target="_blank"><i class="fa fa-twitter"></i></a></li>
             </ul>
-            <p>My passion is marketing - having grown up in the Internet revolution I've focused my efforts in the digital marketing landscape. There has never been a better time to be in this industry, we are surround with more choices, more data and more opportunity than ever before.</p>
+            <p>Berian has more than 10 years agency and client side experience specialising in the technical aspects of running successful online business. As a former technology consultant at Deloitte and Head of Performance Marketing at Auto Trader Berian relishes in working with development teams to implement best in class digital marketing strategies.</p>
       </div>
   </div>
 </div>
@@ -376,17 +376,23 @@
               <div class="award-logo">
                   <img src="img/award_logo.png" alt="...">
           </div>
-                <a class="btn btn-default btn-info btn-lg" href="tel:+441484521562"><i class="fa fa-phone"></i>01484 521562</a>
+                <a class="btn btn-default btn-info btn-lg" href="tel:+441484521562"><span itemprop="telephone"><i class="fa fa-phone"></i>01484 521562</span></a>
         </div>
           <div class="divider"></div>
             <div class="col-md-4">
               <div class="address"><p>
                   <strong>Office address</strong>
-                  <p>Pure Optimisation Ltd
-                  <br>5 Hollowgate
-                  <br>Holmfirth
-                  <br>West Yorkshire
-                  HD92DG</p></div>
+                  </p><p>
+				  <span itemprop="name">Pure Optimisation</span>
+                  <br/>
+				  <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				  <span itemprop="streetAddress">5 Hollowgate</span>
+                  <br/>
+				  <span itemprop="addressLocality">Holmfirth</span>
+                  <br/>
+				  <span itemprop="addressRegion">West Yorkshire</span>
+				  <span itemprop="postalCode">HD92DG</span>
+				  <meta itemprop="addressCountry" content="United Kingdom"></span></p></div>
                 <p>Company Registration Number:
                     <br>9270506</p>
                     <p>VAT Number: <br>201388732</p>
@@ -399,6 +405,8 @@
           </div>
       </div>
 </div>
+<meta itemprop="url" content="http://pureoptimisation.co.uk">
+<meta itemprop="email" content="berian@pureoptimisation.co.uk"></span>
 <div id="copyright">
     <div class="container">
         <div id="row">
@@ -479,5 +487,48 @@ arrows: false,
   slidesToScroll: 5
 });
   </script>
+  
+  
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Pure Optimisation",
+  "url" : "http://pureoptimisation.co.uk",
+  "logo": "http://jalalabdul.github.io/pureoptimise/img/logo.png",
+  "sameAs" : [
+    "https://twitter.com/pureopt",
+    "https://www.linkedin.com/company/4808560"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Person",
+  "name" : "Berian Reed",
+  "url" : "http://pureoptimisation.co.uk",
+  "sameAs" : [
+    "https://twitter.com/berianreed",
+    "https://uk.linkedin.com/in/berian"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Person",
+  "name" : "Antony Robinson",
+  "url" : "http://pureoptimisation.co.uk",
+  "sameAs" : [
+    "https://twitter.com/antrobbo",
+    "https://www.linkedin.com/in/antrobbo"
+  ]
+}
+
+</script>
+
 </body>
 </html>

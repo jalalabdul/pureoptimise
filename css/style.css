@@ -210,7 +210,7 @@ header p {
 }
 /* Services Section */
 #services-section {
-	padding: 80px 0 100px 0;
+	padding: 0px 0 100px 0;
 	color: #5b777f;
 }
 
@@ -500,7 +500,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032731', end
 	padding: 0;
 }
 #about-section li:before {
-	content: "✓";
+	content: "?";
 	color: #f3ca27;
 	padding-right: 5px;
 }

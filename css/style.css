@@ -211,15 +211,10 @@ header p {
 /* Services Section */
 #services-section {
 	padding: 0px 0 100px 0;
-	color: #5b777f;
 }
 
 #services-section p {
 	font-size: 16px;
-}
-#services-section h4 {
-	color: #81969c;
-	text-transform: uppercase;
 }
 #services-section .section-title h3 {
     padding: 0 200px;
@@ -638,6 +633,9 @@ img.img-circle.team-img {
 #contact-section h3 {
 	font-size: 20px;
 	font-weight: 400;
+}
+#contact-section .section-title h3 {
+    padding: 0 200px;
 }
 #contact-section form {
 	padding: 20px 0;

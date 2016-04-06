@@ -20,7 +20,20 @@ function main() {
           }
         }
       });
-    
+
+    /*====================================
+    Preloader
+    ======================================*/
+	
+  	$(window).load(function() {
+
+   	// will first fade out the loading animation 
+    	$("#status").fadeOut("slow"); 
+
+    	// will fade out the whole DIV that covers the website. 
+    	$("#preloader").delay(500).fadeOut("slow").remove();      
+
+  	}) 
     /*====================================
     Show Menu on Book
     ======================================*/
@@ -113,6 +126,15 @@ function main() {
         });
 
     });
+    
+  	/*====================================
+    WOW JS
+    ======================================*/
+    
+$('.nav a').on('click', function(){
+    $('.btn-navbar').click(); //bootstrap 2.x
+    $('.navbar-toggle').click() //bootstrap 3.x by Richard
+});
 
   	/*====================================
     WOW JS

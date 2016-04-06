@@ -136,6 +136,9 @@ hr {
 	letter-spacing: -.3px;
     font-weight: 700;
 }
+#menu.navbar-default .navbar-nav {
+    padding-top: 20px;
+}
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #c00069;
 }
@@ -939,12 +942,3 @@ text-align: center;
     line-height: inherit;
 }
 }
-
-.slick-prev:before, .slick-next:before { font-family: FontAwesome; font-size: 20px; line-height: 1; color: #b8b8b8; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }   
-
-.slick-prev:before { content: "\f053"; }
-[dir="rtl"] .slick-prev:before { content: "\f054"; }
-
-[dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
-.slick-next:before { content: "\f054"; }
-[dir="rtl"] .slick-next:before { content: "\f053"; }

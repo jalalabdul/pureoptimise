@@ -143,6 +143,10 @@ hr {
 	background-color: transparent;
 	border: none;
 }
+.navbar-default .btn {
+    margin-top: 20px;
+    display: none;
+}
 .navbar-default, .navbar-collapse {
     border: none;
 }
@@ -910,9 +914,11 @@ text-align: center;
     -webkit-order: 1;
     order: 1;    
 }
-
 #team-section .item {
 	padding-bottom: 50px;
+}
+.navbar-default .btn {
+    display: inline-block;
 }
 }
 
@@ -922,6 +928,9 @@ text-align: center;
 }
 .navbar-default, .navbar-collapse {
 text-align: center;
+}
+.navbar-default .btn {
+    display: inline-block;
 }
 }
 

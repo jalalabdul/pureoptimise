@@ -20,6 +20,15 @@ function main() {
           }
         }
       });
+    
+    /* ==============================================
+  	Fix navbar collapse
+  	=============================================== */ 
+
+$(".navbar-nav li a").click(function(event) {
+    if (!$(this).parent().hasClass('dropdown'))
+        $(".bs-example-navbar-collapse-1").collapse('hide');
+});
 
     /*====================================
     Preloader

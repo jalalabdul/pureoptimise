@@ -80,7 +80,7 @@ i {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #032e3a;
+	background: #FFF;
 	z-index: 99999;
 	height: 100%;
 }
@@ -722,6 +722,9 @@ label {
 	outline: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+}
+#contact-section .btn {
+	width: 150px;
 }
 a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
 	outline: none;

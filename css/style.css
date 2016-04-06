@@ -839,11 +839,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro-text {
 	padding-top: 150px;
-	padding-bottom: 0px;
+	padding-bottom: 50px;
 }
 .intro-text p {
-    font-size: 21px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: inherit;
 }
 label {
 	float: none !important
@@ -861,6 +861,11 @@ label {
     text-align: center;
 }
 #services-section .section-title h3 {
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: inherit;
+}
+#contact-section .section-title h3 {
     padding: 0 20px;
     font-size: 18px;
     line-height: inherit;
@@ -922,15 +927,15 @@ text-align: center;
 }
 }
 
-@media (max-width: 360px) {
-.hover-bg .hover-text {
-	padding: 22% 10%;
-}
+@media (max-width: 375px) {
 .navbar-default, .navbar-collapse {
 text-align: center;
 }
 .navbar-default .btn {
     display: inline-block;
+}
+header p {
+    font-size: 16px;
 }
 }
 

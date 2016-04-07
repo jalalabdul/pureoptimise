@@ -13,7 +13,6 @@ body, html {
 	-webkit-font-smoothing: antialiased !important;
 	color: #1c424d;
     font-size: 16px;
-    overflow-y: scroll;
 }
 h1, h2, h3, h4, h5 {
     font-family: 'TeX Gyre Adventor', sans-serif;
@@ -708,12 +707,6 @@ label {
     font-weight: 500;
 	transition: all 0.5s;
 }
-
-.btn .separator {
-    content: "|";
-    margin: 5px 0;
-    color: #FFF;
-}
 .btn:hover, #contact-section .btn:focus {
     background: #c4367f;
     background-image: -webkit-linear-gradient(top, #c4367f, #b33275);
@@ -838,6 +831,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 @media (max-width: 603px) {
+body, html {
+    overflow-y: scroll;
+    }
 #menu.navbar-default {
 	background-color: #FFF;
 }
@@ -874,6 +870,11 @@ label {
     font-size: 18px;
     line-height: inherit;
 }
+#contact-section .divider {
+    display: block;
+    height: 10px;
+}
+    
 #services-section .row {
     padding-bottom: 50px;
 }
@@ -941,5 +942,11 @@ text-align: center;
 .intro-text p {
     font-size: 14px;
     line-height: inherit;
+}
+}
+
+@media (min-width: 768px) {
+.intro-text H1 {
+    padding-right: 250px;
 }
 }

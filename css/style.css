@@ -163,6 +163,10 @@ hr {
 .navbar-toggle {
 	border: none;
 }
+.nav
+{
+   -webkit-backface-visibility: hidden;
+}
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: transparent;
 }
@@ -800,6 +804,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Divider */
 .modal-footer {
     border: none;
+}
+
+element.style {
+    display: none;
 }
 
 /* Responsive */

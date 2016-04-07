@@ -829,6 +829,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 @media (max-width: 603px) {
+html, body {
+    overflow-y: scroll;
+}
 #menu.navbar-default {
 	background-color: #FFF;
 }
@@ -868,8 +871,7 @@ label {
 #contact-section .divider {
     display: block;
     height: 10px;
-}
-    
+}    
 #services-section .row {
     padding-bottom: 50px;
 }

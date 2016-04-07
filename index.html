@@ -61,7 +61,7 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
-      <ul class="nav navbar-mobile navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right">
         <li ><a href="#services-section" class="page-scroll">About Us</a></li>
         <li><a href="#values-section" class="page-scroll">Values</a></li>
         <li><a href="#clients-section" class="page-scroll">Clients</a></li>
@@ -316,8 +316,8 @@
       <a class="btn btn-default btn-info btn-lg" href="tel:+441484521562"><i class="fa fa-phone"></i><i class="separator"></i>01484 521562</a>
       <div class="divider"></div>
       <button type="button" class="btn btn-default btn-info btn-lg" data-toggle="modal" data-target="#email"><i class="fa fa-envelope"></i>E-mail Us</button>
-      <div class="panel-collapse collapse out" id="email">
-                    <div class="col-md-12 mail">
+      <div class="collapse" id="email">
+                    <div class="col-md-6 col-md-offset-3 mail">
                       <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
                           <div class="col-md-6">
@@ -435,6 +435,26 @@
 <!-- Javascripts
     ================================================== -->
 <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+
+    var $target = $(".nav");
+
+    enquire.register("screen and (max-width:500px)", {
+        match: function() {
+            $target.addClass("nav-mobile");
+            $('.nav-mobile a').on('click', function(){
+$('.btn-navbar').click(); //bootstrap 2.x
+$('.navbar-toggle').click() //bootstrap 3.x by Richard
+});
+        },
+
+        unmatch: function() {
+            $target.removeClass("nav-mobile");
+        }
+    }).listen();
+    });
+        </script>
 <script type="text/javascript" src="js/mobile.js"></script>
 <script type="text/javascript" src="js/enquire.min.js"></script>
 <script type="application/ld+json">

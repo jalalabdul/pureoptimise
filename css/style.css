@@ -838,7 +838,7 @@ element.style {
 
 @media (max-width: 603px) {
 body {
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 #menu.navbar-default {
 	background-color: #FFF;

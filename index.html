@@ -315,8 +315,9 @@
     </div>
       <a class="btn btn-default btn-info btn-lg" href="tel:+441484521562"><i class="fa fa-phone"></i><i class="separator"></i>01484 521562</a>
       <div class="divider"></div>
-      <button type="button" class="btn btn-default btn-info btn-lg" data-toggle="modal" data-target="#email"><i class="fa fa-envelope"></i>E-mail Us</button>
+      <button type="button" class="btn btn-default btn-info btn-lg" data-toggle="modal" data-target="#email" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-envelope"></i>E-mail Us</button>
       <div class="collapse" id="email">
+          <div class="card card-block">
                     <div class="col-md-6 col-md-offset-3 mail">
                       <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
@@ -363,6 +364,7 @@
                           </div>
                       </form>
                     </div>
+           </div>
           </div>
     </div>
 </div>
@@ -412,10 +414,6 @@
      map=new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
      marker=new google.maps.Marker( {
          map: map, position: new google.maps.LatLng(53.5694453, -1.787499099999991)
-     }
-     );
-     infowindow=new google.maps.InfoWindow( {
-         content: "<b>Pure Optimisation</b><br/>5 Hollowgate, Holmfirth HD9 2DG<br/> United Kingdom",
      }
      );
      google.maps.event.addListener(marker, "click", function() {

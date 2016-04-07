@@ -830,7 +830,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 @media (max-width: 603px) {
 body {
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 #menu.navbar-default {
 	background-color: #FFF;

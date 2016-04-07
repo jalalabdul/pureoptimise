@@ -829,7 +829,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 @media (max-width: 603px) {
-html, body {
+html {
     overflow-y: scroll;
 }
 #menu.navbar-default {

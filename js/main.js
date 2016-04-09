@@ -127,10 +127,14 @@ function main() {
 
     });
     
-   $('#toggle1').click(function() {
+    /*====================================
+    Toggle Email Form
+    ======================================*/
+    
+    $('#toggle1').click(function() {
 	$('.toggle1').slideToggle('fast');
 	return false;
-});
+    });
 
     
   	/*====================================

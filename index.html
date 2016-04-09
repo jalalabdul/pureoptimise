@@ -23,17 +23,7 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-
-<!-- Slick
-    ================================================== -->
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
-<!-- Slider
-    ================================================== -->
-<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-<link href="css/owl.theme.css" rel="stylesheet" media="screen">
-
+    
 <!-- Stylesheet
     ================================================== -->
 <link rel="stylesheet" type="text/css"  href="css/style.css">
@@ -315,10 +305,9 @@
     </div>
       <a class="btn btn-default btn-info btn-lg" href="tel:+441484521562"><i class="fa fa-phone"></i><i class="separator"></i>01484 521562</a>
       <div class="divider"></div>
-      <button type="button" class="btn btn-default btn-info btn-lg" data-toggle="modal" data-target="#email" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-envelope"></i>E-mail Us</button>
-      <div class="collapse" id="email">
-          <div class="card card-block">
-                    <div class="col-md-6 col-md-offset-3 mail">
+      <a class="btn btn-default btn-info btn-lg" id="toggle1"><i class="fa fa-envelope"></i>E-mail Us</a>
+      <div class="toggle1 email">
+                    <div class="col-md-8 col-md-offset-2 email">
                       <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
                           <div class="col-md-6">
@@ -337,7 +326,7 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <input type="text" id="name" class="form-control" placeholder="Phone number (optional)" required="required">
+                              <input type="text" id="name" class="form-control" placeholder="Phone number (optional)">
                               <p class="help-block text-danger"></p>
                             </div>
                           </div>
@@ -352,7 +341,6 @@
                                 </select>
                             </div>
                           </div>
-
                         </div>
                         <div class="form-group">
                           <textarea name="message" id="message" class="form-control" rows="4" placeholder="How can we help you today?" required></textarea>
@@ -364,7 +352,6 @@
                           </div>
                       </form>
                     </div>
-           </div>
           </div>
     </div>
 </div>
@@ -488,6 +475,14 @@
   ]
 }
 </script>
+    
+<script>
+$(document).ready(function(){
+    $(".emailbutton").click(function(){
+        $(".email").slideToggle();
+    });
+});
+    </script>
 
 <script type="application/ld+json">
 {

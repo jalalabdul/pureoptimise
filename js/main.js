@@ -127,6 +127,12 @@ function main() {
 
     });
     
+   $('#toggle1').click(function() {
+	$('.toggle1').slideToggle('fast');
+	return false;
+});
+
+    
   	/*====================================
     Hiring Ribbon
     ======================================*/
@@ -151,15 +157,6 @@ function main() {
 	new WOW().init();
 	//smoothScroll
 	smoothScroll.init();
-    
-    
-    
-  	/*====================================
-    WOW JS
-    ======================================*/    
-    
-    
-
 
 	
 }());

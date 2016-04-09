@@ -741,6 +741,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+
+.toggle1 {
+    display: none;
+}
 /* Footer */
 #footer {
 	background: #1e232a;

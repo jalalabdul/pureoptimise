@@ -120,7 +120,7 @@ hr {
 	border-color: rgba(231, 231, 231, 0);
 }
 #menu a.navbar-brand {
-    margin-top: -20px;
+    margin-top: -25px;
 	font-size: 22px;
 	color: #d9e0e2;
 	font-weight: 700;
@@ -133,7 +133,7 @@ hr {
     font-family: 'TeX Gyre Adventor', sans-serif;
 	color: #231F20;
 	font-size: 16px;
-	letter-spacing: -.3px;
+	letter-spacing: -.2px;
     font-weight: 700;
 }
 
@@ -246,7 +246,6 @@ header p {
 #services-section .service:hover>i.fa {
 	background: #0b3540;
 }
-
 .services-icon {
     display: inline-block;
     width: 200px;
@@ -257,7 +256,6 @@ header p {
     line-height: 90px;
     margin-left: 50px;
 }
-
 .services-icon-right {
     display: inline-block;
     width: 200px;
@@ -268,22 +266,18 @@ header p {
     line-height: 90px;
     margin-right: 50px;
 }
-
 .services-arrow {
     padding-left: 100px;
 }
-
 .services-arrow-right {
     padding-right: 100px;
 }
-
 .services-content {
     display: inline-block;
     margin-left: 0;
     text-align: left;
     padding-right: 100px;
 }
-
 .services-content-right {
     display: inline-block;
     margin-left: 0;
@@ -291,198 +285,6 @@ header p {
     padding-left: 100px;
 }
 
-/* Gallery Section 
-==============================*/
-#works-section {
-	padding: 80px 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c1a618+0,f1c40f+25,f1c40f+75,c1a618+100 */
-	background: rgb(193,166,24); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(193,166,24,1) 0%, rgba(241,196,15,1) 25%, rgba(241,196,15,1) 75%, rgba(193,166,24,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(193,166,24,1) 0%, rgba(241,196,15,1) 25%, rgba(241,196,15,1) 75%, rgba(193,166,24,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(193,166,24,1) 0%, rgba(241,196,15,1) 25%, rgba(241,196,15,1) 75%, rgba(193,166,24,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1a618', endColorstr='#c1a618', GradientType=0 ); /* IE6-9 */
-}
-#works-section i.fa {
-	font-size: 30px;
-	padding: 5px;
-	color: #f1c40f;
-}
-.categories {
-	padding-bottom: 30px;
-	text-align: center;
-}
-#works-section hr {
-	background: #1cb2df;
-}
-ul.cat li {
-	display: inline-block;
-}
-ol.type li {
-	display: inline-block;
-	margin-left: 20px;
-}
-ol.type li a {
-	color: #51633d;
-	border: 1px solid #f7dc6f;
-	padding: 8px 16px;
-	border-radius: 3px;
-}
-ol.type li a.active {
-	background: #f7dc6f;
-}
-ol.type li a:hover {
-	background: #f7dc6f;
-}
-.isotope-item {
-	z-index: 2
-}
-.isotope-hidden.isotope-item {
-	z-index: 1
-}
-.isotope, .isotope .isotope-item {
-	/* change duration value to whatever you like */
-	-webkit-transition-duration: 0.8s;
-	-moz-transition-duration: 0.8s;
-	transition-duration: 0.8s;
-}
-.isotope-item {
-	margin-right: -1px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-.isotope {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: height, width;
-	-moz-transition-property: height, width;
-	transition-property: height, width;
-}
-.isotope .isotope-item {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: -webkit-transform, opacity;
-	-moz-transition-property: -moz-transform, opacity;
-	transition-property: transform, opacity;
-}
-.portfolio-item {
-	margin-bottom: 30px;
-}
-.portfolio-item .hover-bg {
-	height: 260px;
-	overflow: hidden;
-	position: relative;
-}
-.hover-bg .hover-text {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: #c0cbce;
-	background: rgba(3, 46, 58, 0.8);
-	padding: 25% 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
-}
-.hover-bg .hover-text>h4 {
-	opacity: 0;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-	font-size: 20px;
-}
-.hover-bg:hover .hover-text>h4 {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.hover-bg .hover-text>i {
-	opacity: 0;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>i {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-}
-.hover-bg:hover .hover-text {
-	opacity: 1;
-}
-.portfolio-modal .modal-content {
-	padding: 100px 0;
-	min-height: 100%;
-	border: 0;
-	border-radius: 0;
-	text-align: center;
-	background-clip: border-box;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	background: #f1c40f;
-}
-.portfolio-modal .modal-content h2 {
-	margin-bottom: 15px;
-	font-size: 2.5em;
-}
-.portfolio-modal .modal-content p {
-	margin-bottom: 30px;
-}
-.portfolio-modal .modal-content p.item-intro {
-	margin: 10px 0 30px;
-	font-size: 14px;
-	font-style: italic;
-}
-.portfolio-modal .modal-content ul.list-inline {
-	margin-top: 0;
-	margin-bottom: 30px;
-}
-.portfolio-modal .modal-content img {
-	margin-bottom: 30px;
-}
-.portfolio-modal .close-modal {
-	position: absolute;
-	top: 25px;
-	right: 25px;
-	width: 75px;
-	height: 75px;
-	background-color: transparent;
-	cursor: pointer;
-}
-.portfolio-modal .close-modal:hover {
-	opacity: .3;
-}
-.portfolio-modal .close-modal .lr {
-	z-index: 1051;
-	width: 1px;
-	height: 75px;
-	margin-left: 35px;
-	background-color: #222;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-.portfolio-modal .close-modal .lr .rl {
-	z-index: 1052;
-	width: 1px;
-	height: 75px;
-	background-color: #222;
-	-webkit-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	transform: rotate(90deg);
-}
-.portfolio-modal .btn-primary {
-	color: #a7b6ba;
-	background-color: #1d434e;
-	border-color: #1d434e;
-}
-.portfolio-modal .btn-primary:hover, .portfolio-modal .btn-primary:focus, .portfolio-modal .btn-primary.focus, .portfolio-modal .btn-primary:active, .portfolio-modal .btn-primary.active {
-	color: #a7b6ba;
-	background-color: #032e3a;
-	border-color: #032e3a;
-}
 /* About Section */
 #about-section {
 	padding: 80px 0;
@@ -625,7 +427,7 @@ img.img-circle.team-img {
 }
 
 #values-section .item {
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 #values-section .item h3 {
@@ -647,7 +449,7 @@ img.img-circle.team-img {
     padding: 0 200px;
 }
 #contact-section form {
-	padding: 20px 0;
+	padding: 50px 0;
 }
 #contact-section .fa {
 	color: #fff;
@@ -657,6 +459,7 @@ label {
 	font-weight: 400;
 	float: left;
 }
+
 #contact-section .form-control {
 	display: block;
 	width: 100%;
@@ -740,6 +543,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+
+.toggle1 {
+    display: none;
+}
 /* Footer */
 #footer {
 	background: #1e232a;
@@ -806,47 +613,23 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     border: none;
 }
 
+.collapse {
+    overflow: hidden;
+}
+
 element.style {
     display: none;
 }
 
 /* Responsive */
 
-@media (max-width: 768px) {
-.section-title {
-    padding: none;
-    }
-.intro-text {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-.intro-text H1 {
-    font-size: 48px;
-    line-height: 48px;
-}
-#single-item {
-        .item { 
-            display:block;
-            padding-bottom:10px;
-        }
-}
-.services-content {
-    text-align: center;
-    width: 100%;
-}
-}
-
-@media (max-width: 603px) {
+@media (max-width: 800px) {
 #menu.navbar-default {
 	background-color: #FFF;
 }
 .intro-text {
 	padding-top: 150px;
 	padding-bottom: 50px;
-}
-.intro-text p {
-    font-size: 18px;
-    line-height: inherit;
 }
 label {
 	float: none !important
@@ -929,26 +712,36 @@ text-align: center;
 #team-section .item {
 	padding-bottom: 50px;
 }
-.navbar-default .btn {
-    display: inline-block;
-}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
 .navbar-default, .navbar-collapse {
 text-align: center;
 }
 .navbar-default .btn {
     display: inline-block;
 }
+.intro-text {
+	padding-top: 100px;
+}   
 .intro-text p {
     font-size: 14px;
     line-height: inherit;
+}
+.intro-text H1 {
+    font-size: 48px;
+    line-height: 48px;
 }
 }
 
 @media (min-width: 768px) {
 .intro-text H1 {
-    padding-right: 250px;
+    padding-right: 50px;
+}
+}
+
+@media (min-width: 1280px) {
+.intro-text H1 {
+    padding-right: 150px;
 }
 }

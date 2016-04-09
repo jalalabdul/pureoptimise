@@ -133,7 +133,7 @@ hr {
     font-family: 'TeX Gyre Adventor', sans-serif;
 	color: #231F20;
 	font-size: 16px;
-	letter-spacing: -.3px;
+	letter-spacing: -.2px;
     font-weight: 700;
 }
 
@@ -821,41 +821,13 @@ element.style {
 
 /* Responsive */
 
-@media (max-width: 768px) {
-.section-title {
-    padding: none;
-    }
-.intro-text {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-.intro-text H1 {
-    font-size: 48px;
-    line-height: 48px;
-}
-#single-item {
-        .item { 
-            display:block;
-            padding-bottom:10px;
-        }
-}
-.services-content {
-    text-align: center;
-    width: 100%;
-}
-}
-
-@media (max-width: 603px) {
+@media (max-width: 800px) {
 #menu.navbar-default {
 	background-color: #FFF;
 }
 .intro-text {
 	padding-top: 150px;
 	padding-bottom: 50px;
-}
-.intro-text p {
-    font-size: 18px;
-    line-height: inherit;
 }
 label {
 	float: none !important
@@ -938,26 +910,34 @@ text-align: center;
 #team-section .item {
 	padding-bottom: 50px;
 }
-.navbar-default .btn {
-    display: inline-block;
-}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
 .navbar-default, .navbar-collapse {
 text-align: center;
 }
 .navbar-default .btn {
     display: inline-block;
 }
+    
 .intro-text p {
     font-size: 14px;
     line-height: inherit;
+}
+.intro-text H1 {
+    font-size: 48px;
+    line-height: 48px;
 }
 }
 
 @media (min-width: 768px) {
 .intro-text H1 {
-    padding-right: 250px;
+    padding-right: 50px;
+}
+}
+
+@media (min-width: 1280px) {
+.intro-text H1 {
+    padding-right: 150px;
 }
 }

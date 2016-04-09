@@ -128,13 +128,21 @@ function main() {
     });
     
   	/*====================================
-    WOW JS
+    Hiring Ribbon
     ======================================*/
-    
-$('.nav a').on('click', function(){
-    $('.btn-navbar').click(); //bootstrap 2.x
-    $('.navbar-toggle').click() //bootstrap 3.x by Richard
-});
+    window.onscroll = function (e) {
+        var Wposition = window.pageYOffset
+        var Dposition = document.getElementById('team-section').offsetTop;
+        var diff=Dposition-Wposition;
+        if(diff<=45)
+        {
+        document.getElementById('hiring').style.opacity="1";
+        }
+        if(diff>45)
+        {
+        document.getElementById('hiring').style.opacity="0";
+        }    
+    }
 
   	/*====================================
     WOW JS
@@ -143,6 +151,14 @@ $('.nav a').on('click', function(){
 	new WOW().init();
 	//smoothScroll
 	smoothScroll.init();
+    
+    
+    
+  	/*====================================
+    WOW JS
+    ======================================*/    
+    
+    
 
 
 	

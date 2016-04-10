@@ -4,10 +4,6 @@ function main() {
 (function () {
    'use strict';
 
-   /* ==============================================
-  	Testimonial Slider
-  	=============================================== */ 
-
   	$('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
@@ -36,7 +32,7 @@ function main() {
     $('body').scrollspy({ 
         target: '.navbar-default',
         offset: 80
-    })
+    });
     
     /*====================================
     Toggle Email Form
@@ -51,19 +47,22 @@ function main() {
   	/*====================================
     Hiring Ribbon
     ======================================*/
+    /*====================================
+    Hiring Ribbon
+    ======================================*/
     window.onscroll = function (e) {
-        var Wposition = window.pageYOffset
-        var Dposition = document.getElementById('team-section').offsetTop;
-        var diff=Dposition-Wposition;
-        if(diff<=45)
+        var wPosition = window.pageYOffset;
+        var startRange = document.getElementById('team-section').offsetTop - 200;
+        var endRange = document.getElementById('contact-section').offsetTop;
+        if(wPosition > startRange && wPosition < endRange)
         {
         document.getElementById('hiring').style.opacity="1";
         }
-        if(diff>45)
+        else
         {
         document.getElementById('hiring').style.opacity="0";
         }    
-    }
+    };
 
   	/*====================================
     WOW JS

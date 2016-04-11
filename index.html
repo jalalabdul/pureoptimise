@@ -318,18 +318,18 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <input type="text" id="name" class="form-control" placeholder="Phone number (optional)">
+                              <input type="text" id="phone" class="form-control" placeholder="Phone number (optional)">
                               <p class="help-block text-danger"></p>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                                <select class="form-control" id="sel1">
+                                <select class="form-control" id="size">
                                     <option value="" disabled selected>Business size</option>
-                                    <option>< £500k</option>
-                                    <option>£500k - £1m</option>
-                                    <option>£1m - £5m</option>
-                                    <option>£5m - £10m</option>
+                                    <option value="Less than £500k">Less than £500k</option>
+                                    <option value="£500k - £1m">£500k - £1m</option>
+                                    <option value="£1m - £5m">£1m - £5m</option>
+                                    <option value="£5m - £10m">£5m - £10m</option>
                                 </select>
                             </div>
                           </div>
@@ -353,7 +353,7 @@
   <div class="container">
       <div id="row">
           <div class="col-md-4">
-              <div class="logo"><img src="img/logo_white.png" alt="..."></div>
+              <div class="logo"><img class="footer-brand" src="img/logo_white.png" alt="..."></div>
               <div class="award-logo">
                   <img src="img/award_logo.png" alt="...">
           </div>

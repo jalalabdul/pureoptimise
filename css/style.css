@@ -561,6 +561,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-top: 10px;
     font-size: 14px;
 }
+.footer-brand {
+    margin-top: -15px;
+    width: auto;
+    height: 35px;
+}
 
 #copyright {
 	background: #181c22;

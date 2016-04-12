@@ -3,7 +3,7 @@
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
    empty($_POST['phone']) 		||
-   empty($_POST['size']) 		||
+   empty($_POST['bizsize']) 	||
    empty($_POST['message'])	    ||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
@@ -14,7 +14,7 @@ if(empty($_POST['name'])  		||
 $name = $_POST['name'];
 $email_address = $_POST['email'];
 $phone = $_POST['phone'];
-$business_size = $_POST['size'];
+$business_size = $_POST['bizsize'];
 $message = $_POST['message'];
 
 // Create the email and send the message

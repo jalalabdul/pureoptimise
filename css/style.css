@@ -126,14 +126,15 @@ hr {
 	letter-spacing: 1px;
 }
 .navbar-brand {
-    margin-top: -15px;
+    margin-top: -20px;
     width: auto;
-    height: 70px;
+    height: 80px;
 }
 #menu a.navbar-brand i.fa {
 	color: #f3ca27;
 }
 #menu.navbar-default .navbar-nav > li > a {
+    margin-top: 5px;
     font-family: 'TeX Gyre Adventor', sans-serif;
 	color: #231F20;
 	font-size: 16px;
@@ -732,6 +733,11 @@ text-align: center;
 }
 .navbar-default .btn {
     display: inline-block;
+}
+.navbar-brand {
+    margin-top: -15px;
+    width: auto;
+    height: 70px;
 }
 .intro-text {
 	padding-top: 100px;

@@ -530,6 +530,12 @@ label {
     border: none;
 	color: #fff;
 }
+.btn-big {
+	font-size: 21px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 10px 20px;
+}
 #contact-section .text-danger {
     font-size: 12px;
 	color: #c00069;
@@ -587,6 +593,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .award-logo {
     padding-top: 30px;
     padding-bottom: 50px;
+}
+
+.logo-inner {
+	width: 60%;
+	display: block;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .contact-list {
